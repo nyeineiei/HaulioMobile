@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4423298921450C4300851535 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4423298721450C4300851535 /* MapVC.swift */; };
+		4423298A21450C4300851535 /* MapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4423298821450C4300851535 /* MapVC.xib */; };
+		4423299121454D7D00851535 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4423298B21451ABC00851535 /* CoreLocation.framework */; };
 		A8C58EDA52D61F9307C46ED2 /* Pods_HaulioMobileSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32417FA58D785EB3618B141 /* Pods_HaulioMobileSwift.framework */; };
 		C0035C8D2144D05600A24EB0 /* JobsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0035C8B2144D05600A24EB0 /* JobsVC.swift */; };
 		C0035C8E2144D05600A24EB0 /* JobsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0035C8C2144D05600A24EB0 /* JobsVC.xib */; };
@@ -44,6 +47,9 @@
 
 /* Begin PBXFileReference section */
 		00B9FC268848111993BD49CF /* Pods-HaulioMobileSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaulioMobileSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaulioMobileSwift/Pods-HaulioMobileSwift.release.xcconfig"; sourceTree = "<group>"; };
+		4423298721450C4300851535 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		4423298821450C4300851535 /* MapVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapVC.xib; sourceTree = "<group>"; };
+		4423298B21451ABC00851535 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		63A827F317D7EFC667D2C04B /* Pods-HaulioMobileSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaulioMobileSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaulioMobileSwift/Pods-HaulioMobileSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		B32417FA58D785EB3618B141 /* Pods_HaulioMobileSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaulioMobileSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0035C8B2144D05600A24EB0 /* JobsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsVC.swift; sourceTree = "<group>"; };
@@ -74,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4423299121454D7D00851535 /* CoreLocation.framework in Frameworks */,
 				A8C58EDA52D61F9307C46ED2 /* Pods_HaulioMobileSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,9 +102,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4423298621450C2E00851535 /* MapVC */ = {
+			isa = PBXGroup;
+			children = (
+				4423298721450C4300851535 /* MapVC.swift */,
+				4423298821450C4300851535 /* MapVC.xib */,
+			);
+			path = MapVC;
+			sourceTree = "<group>";
+		};
 		688A0DF297095AE6C4CEBAA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4423298B21451ABC00851535 /* CoreLocation.framework */,
 				B32417FA58D785EB3618B141 /* Pods_HaulioMobileSwift.framework */,
 			);
 			name = Frameworks;
@@ -220,6 +237,7 @@
 		C0599E312144CCA100C2DFE8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4423298621450C2E00851535 /* MapVC */,
 				C0035C9B2144F9D600A24EB0 /* UserProfileVC */,
 				C0035C952144EEFD00A24EB0 /* Cells */,
 				C0035C8A2144D04600A24EB0 /* JobsVC */,
@@ -358,6 +376,7 @@
 				C0035C8E2144D05600A24EB0 /* JobsVC.xib in Resources */,
 				C0599E092144CC5D00C2DFE8 /* Main.storyboard in Resources */,
 				C0035CA32144FA0F00A24EB0 /* UserProfileVC.xib in Resources */,
+				4423298A21450C4300851535 /* MapVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,10 +446,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HaulioMobileSwift/Pods-HaulioMobileSwift-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,6 +473,7 @@
 				C0035C8D2144D05600A24EB0 /* JobsVC.swift in Sources */,
 				C0035CA62144FB2200A24EB0 /* CustomHelper.swift in Sources */,
 				C0599E362144CCEA00C2DFE8 /* LoginVC.swift in Sources */,
+				4423298921450C4300851535 /* MapVC.swift in Sources */,
 				C0599E042144CC5D00C2DFE8 /* AppDelegate.swift in Sources */,
 				C0035CA22144FA0F00A24EB0 /* UserProfileVC.swift in Sources */,
 			);
@@ -626,13 +650,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = KDBHGE2RS5;
 				INFOPLIST_FILE = HaulioMobileSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.weeswares.HaulioMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nyeinei.HaulioMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -645,13 +669,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = KDBHGE2RS5;
 				INFOPLIST_FILE = HaulioMobileSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.weeswares.HaulioMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nyeinei.HaulioMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

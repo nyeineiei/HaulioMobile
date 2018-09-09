@@ -8,11 +8,21 @@
 
 import UIKit
 
+protocol UITableViewCellDelegate: AnyObject{
+    func tapBtnAccept(index:NSInteger)
+    func tapBtnShowMap(index:NSInteger)
+}
+
+
 class JobCell: UITableViewCell {
 
     @IBOutlet weak var lblJobNo: UILabel!
     @IBOutlet weak var lblCompanyName: UILabel!
     @IBOutlet weak var lblCompanyAddress: UILabel!
+    
+    var index:NSInteger!
+    
+    weak var delegate: UITableViewCellDelegate?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -29,14 +39,22 @@ class JobCell: UITableViewCell {
         return vw!
     }
     
-    func setData(data:Any) {
-        print(data)
+    func setData(data:Any,index:NSInteger) {
         let d = data as! Dictionary<String, Any>
+        self.index = index
         
-        self.lblJobNo.text = d["job-id"] as? String
+        let jobid:NSInteger = d["job-id"] as! NSInteger
+        self.lblJobNo.text = String(jobid)
         self.lblCompanyName.text = d["company"] as? String
         self.lblCompanyAddress.text = d["address"] as? String
     }
     
-    @IBOutlet weak var tapBtnAccept: UIButton!
+    @IBAction func tapBtnAccept(_ sender: Any) {
+        self.delegate?.tapBtnAccept(index: self.index)
+    }
+    
+    @IBAction func tapBtnShowMap(_ sender: Any) {
+        self.delegate?.tapBtnShowMap(index: self.index)
+    }
+    
 }

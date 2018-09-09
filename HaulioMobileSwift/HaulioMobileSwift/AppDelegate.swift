@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import GooglePlaces;
+import GoogleMaps;
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate{
@@ -15,7 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
+        GMSServices.provideAPIKey("AIzaSyAV2t9MdPCKGWuVxOVbn0fTt75w40jN5l8")
+        GMSPlacesClient.provideAPIKey("AIzaSyAV2t9MdPCKGWuVxOVbn0fTt75w40jN5l8")
+        
         return true
     }
 

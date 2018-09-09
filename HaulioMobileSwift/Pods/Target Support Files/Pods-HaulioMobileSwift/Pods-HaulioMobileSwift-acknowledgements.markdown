@@ -436,6 +436,14 @@ THE SOFTWARE.
    limitations under the License.
 
 
+## GoogleMaps
+
+Copyright 2018 Google
+
+## GooglePlaces
+
+Copyright 2018 Google
+
 ## GoogleSignIn
 
 Copyright 2018 Google

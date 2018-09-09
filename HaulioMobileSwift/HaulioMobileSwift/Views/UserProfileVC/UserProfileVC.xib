@@ -51,12 +51,12 @@
             <constraints>
                 <constraint firstItem="UkH-Ey-Qwu" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="7ck-Rg-dJ5"/>
                 <constraint firstItem="xYG-vK-N6n" firstAttribute="centerY" secondItem="GDv-cU-qve" secondAttribute="centerY" id="DTC-7X-EN8"/>
-                <constraint firstItem="mOk-hW-Rbv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="234" id="DpT-ZM-jTP"/>
                 <constraint firstItem="UkH-Ey-Qwu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="MjF-ju-2fH"/>
                 <constraint firstItem="UkH-Ey-Qwu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aRz-tY-jhV"/>
                 <constraint firstItem="mOk-hW-Rbv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cVh-TX-U7u"/>
                 <constraint firstItem="xYG-vK-N6n" firstAttribute="top" secondItem="mOk-hW-Rbv" secondAttribute="bottom" constant="9" id="gaD-bH-lTI"/>
                 <constraint firstItem="xYG-vK-N6n" firstAttribute="centerX" secondItem="mOk-hW-Rbv" secondAttribute="centerX" id="r7A-2a-Ab8"/>
+                <constraint firstItem="mOk-hW-Rbv" firstAttribute="top" secondItem="UkH-Ey-Qwu" secondAttribute="bottom" constant="14" id="rTe-b2-beb"/>
                 <constraint firstItem="GDv-cU-qve" firstAttribute="leading" secondItem="xYG-vK-N6n" secondAttribute="trailing" constant="18" id="yJr-F7-5Ci"/>
             </constraints>
             <point key="canvasLocation" x="33.5" y="69.5"/>

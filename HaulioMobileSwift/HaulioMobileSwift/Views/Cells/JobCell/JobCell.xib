@@ -49,7 +49,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Changi Road Singapore " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhf-Dt-2RP">
-                        <rect key="frame" x="76" y="64.5" width="226" height="14.5"/>
+                        <rect key="frame" x="76" y="64.5" width="171" height="14.5"/>
                         <constraints>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14.5" id="ef9-NK-4pX"/>
                         </constraints>
@@ -68,6 +68,20 @@
                         <state key="normal" title="Accept">
                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
+                        <connections>
+                            <action selector="tapBtnAccept:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Nyw-79-Fr7"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGz-cE-jND">
+                        <rect key="frame" x="265" y="56" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="Kfg-l3-V8O"/>
+                            <constraint firstAttribute="height" constant="25" id="rnh-9c-pv1"/>
+                        </constraints>
+                        <state key="normal" image="ic_map"/>
+                        <connections>
+                            <action selector="tapBtnShowMap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Gca-gL-HYX"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
@@ -75,14 +89,16 @@
                     <constraint firstAttribute="trailing" secondItem="GsY-4T-DUA" secondAttribute="trailing" constant="18" id="8jR-Eb-QMT"/>
                     <constraint firstItem="nhf-Dt-2RP" firstAttribute="leading" secondItem="Iiy-Cb-Z4E" secondAttribute="trailing" constant="8" id="AGz-qh-XDU"/>
                     <constraint firstItem="Iiy-Cb-Z4E" firstAttribute="leading" secondItem="GCm-ne-qZs" secondAttribute="leading" id="LHe-lw-ZOF"/>
+                    <constraint firstItem="BGz-cE-jND" firstAttribute="top" secondItem="GsY-4T-DUA" secondAttribute="bottom" constant="17.5" id="Qoz-YQ-6EK"/>
                     <constraint firstItem="Iiy-Cb-Z4E" firstAttribute="top" secondItem="GCm-ne-qZs" secondAttribute="bottom" constant="8" id="Rnc-gO-EfC"/>
                     <constraint firstItem="GsY-4T-DUA" firstAttribute="centerY" secondItem="YnF-cY-EQw" secondAttribute="centerY" id="Tr6-FB-sLQ"/>
                     <constraint firstItem="wdJ-m1-pAt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="Wvl-9o-fBf"/>
                     <constraint firstItem="bQn-Vr-1ch" firstAttribute="centerY" secondItem="GCm-ne-qZs" secondAttribute="centerY" id="X63-Vs-Zsc"/>
+                    <constraint firstItem="BGz-cE-jND" firstAttribute="centerX" secondItem="GsY-4T-DUA" secondAttribute="centerX" id="YLl-CY-IhJ"/>
                     <constraint firstItem="GCm-ne-qZs" firstAttribute="leading" secondItem="wdJ-m1-pAt" secondAttribute="leading" id="bmf-wh-5wr"/>
-                    <constraint firstAttribute="trailing" secondItem="nhf-Dt-2RP" secondAttribute="trailing" constant="18" id="dzv-Gh-HyM"/>
                     <constraint firstItem="wdJ-m1-pAt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="lXz-u0-pRD"/>
                     <constraint firstItem="YnF-cY-EQw" firstAttribute="centerY" secondItem="wdJ-m1-pAt" secondAttribute="centerY" id="m1j-q6-F5Z"/>
+                    <constraint firstItem="BGz-cE-jND" firstAttribute="leading" secondItem="nhf-Dt-2RP" secondAttribute="trailing" constant="18" id="q4m-WT-LhO"/>
                     <constraint firstItem="GCm-ne-qZs" firstAttribute="top" secondItem="wdJ-m1-pAt" secondAttribute="bottom" constant="8" id="upy-ci-U2r"/>
                     <constraint firstItem="nhf-Dt-2RP" firstAttribute="top" secondItem="Iiy-Cb-Z4E" secondAttribute="top" id="yT9-jJ-IX7"/>
                     <constraint firstItem="bQn-Vr-1ch" firstAttribute="leading" secondItem="GCm-ne-qZs" secondAttribute="trailing" constant="8" id="z1Z-lv-a51"/>
@@ -92,8 +108,11 @@
                 <outlet property="lblCompanyAddress" destination="nhf-Dt-2RP" id="XLB-sv-ZB2"/>
                 <outlet property="lblCompanyName" destination="bQn-Vr-1ch" id="Wy7-IZ-jub"/>
                 <outlet property="lblJobNo" destination="YnF-cY-EQw" id="he2-TM-gTk"/>
-                <outlet property="tapBtnAccept" destination="GsY-4T-DUA" id="jZ5-vl-89S"/>
             </connections>
+            <point key="canvasLocation" x="-88" y="54"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="ic_map" width="42" height="42"/>
+    </resources>
 </document>

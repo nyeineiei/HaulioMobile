@@ -1,8 +1,12 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
+source 'https://github.com/CocoaPods/Specs.git'
+
 target 'HaulioMobileSwift' do
-use_frameworks!
-  pod 'GoogleSignIn'
-  pod 'Alamofire', '~> 4.7'
+    use_frameworks!
+    pod 'GoogleMaps'
+    pod 'GooglePlaces'
+    pod 'GoogleSignIn'
+    pod 'Alamofire', '~> 4.7'
 end

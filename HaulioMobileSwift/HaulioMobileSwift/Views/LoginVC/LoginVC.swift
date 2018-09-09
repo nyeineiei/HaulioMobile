@@ -19,11 +19,18 @@ class LoginVC: UIViewController,GIDSignInUIDelegate,GIDSignInDelegate {
         
         self.navigationController?.navigationBar.isHidden = true
         GIDSignIn.sharedInstance().uiDelegate = self
+        
+        self.registerNotification()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func registerNotification() {
+        let nc = NotificationCenter.default
+        nc.addObserver(self, selector: #selector(self.logout), name: Notification.Name("UserLoggedOut"), object: nil)
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
@@ -44,20 +51,15 @@ class LoginVC: UIViewController,GIDSignInUIDelegate,GIDSignInDelegate {
                 }
                 
                 
-                //Push JobsVC
+                //set JobsVC as rootview controller
                 let jobsVC = JobsVC(nibName: "JobsVC", bundle: nil)
-                self.navigationController!.pushViewController(jobsVC, animated: true)
+                let navController = UINavigationController(rootViewController: jobsVC)
+                self.present(navController, animated:true, completion: nil)
             }
-            
-            // Perform any operations on signed in user here.
-            //            let userId = user.userID                  // For client-side use only!
-            //            let idToken = user.authentication.idToken // Safe to send to the server
-            //            let fullName = user.profile.name
-            //            let givenName = user.profile.givenName
-            //            let familyName = user.profile.familyName
-            //            let email = user.profile.email
-            // ...
         }
     }
 
+    @objc func logout() {
+        GIDSignIn.sharedInstance().signOut()
+    }
 }
