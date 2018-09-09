@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8C58EDA52D61F9307C46ED2 /* Pods_HaulioMobileSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32417FA58D785EB3618B141 /* Pods_HaulioMobileSwift.framework */; };
+		C0035C8D2144D05600A24EB0 /* JobsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0035C8B2144D05600A24EB0 /* JobsVC.swift */; };
+		C0035C8E2144D05600A24EB0 /* JobsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0035C8C2144D05600A24EB0 /* JobsVC.xib */; };
+		C0035C942144D4A800A24EB0 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0035C932144D4A800A24EB0 /* NetworkHelper.swift */; };
+		C0035C992144EF2700A24EB0 /* JobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0035C972144EF2700A24EB0 /* JobCell.swift */; };
+		C0035C9A2144EF2700A24EB0 /* JobCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0035C982144EF2700A24EB0 /* JobCell.xib */; };
+		C0035CA22144FA0F00A24EB0 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0035CA02144FA0F00A24EB0 /* UserProfileVC.swift */; };
+		C0035CA32144FA0F00A24EB0 /* UserProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0035CA12144FA0F00A24EB0 /* UserProfileVC.xib */; };
+		C0035CA62144FB2200A24EB0 /* CustomHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0035CA52144FB2200A24EB0 /* CustomHelper.swift */; };
 		C0599E042144CC5D00C2DFE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0599E032144CC5D00C2DFE8 /* AppDelegate.swift */; };
 		C0599E092144CC5D00C2DFE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0599E072144CC5D00C2DFE8 /* Main.storyboard */; };
 		C0599E0B2144CC5E00C2DFE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0599E0A2144CC5E00C2DFE8 /* Assets.xcassets */; };
@@ -14,7 +23,6 @@
 		C0599E192144CC5E00C2DFE8 /* HaulioMobileSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0599E182144CC5E00C2DFE8 /* HaulioMobileSwiftTests.swift */; };
 		C0599E242144CC5E00C2DFE8 /* HaulioMobileSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0599E232144CC5E00C2DFE8 /* HaulioMobileSwiftUITests.swift */; };
 		C0599E362144CCEA00C2DFE8 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0599E352144CCEA00C2DFE8 /* LoginVC.swift */; };
-		DBC26E5339C02A72E90020C8 /* libPods-HaulioMobileSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E11BBB4F6862DBF9A82C5EE /* libPods-HaulioMobileSwift.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +44,16 @@
 
 /* Begin PBXFileReference section */
 		00B9FC268848111993BD49CF /* Pods-HaulioMobileSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaulioMobileSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaulioMobileSwift/Pods-HaulioMobileSwift.release.xcconfig"; sourceTree = "<group>"; };
-		2E11BBB4F6862DBF9A82C5EE /* libPods-HaulioMobileSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HaulioMobileSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A827F317D7EFC667D2C04B /* Pods-HaulioMobileSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaulioMobileSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaulioMobileSwift/Pods-HaulioMobileSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		B32417FA58D785EB3618B141 /* Pods_HaulioMobileSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaulioMobileSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0035C8B2144D05600A24EB0 /* JobsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsVC.swift; sourceTree = "<group>"; };
+		C0035C8C2144D05600A24EB0 /* JobsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobsVC.xib; sourceTree = "<group>"; };
+		C0035C932144D4A800A24EB0 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		C0035C972144EF2700A24EB0 /* JobCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCell.swift; sourceTree = "<group>"; };
+		C0035C982144EF2700A24EB0 /* JobCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobCell.xib; sourceTree = "<group>"; };
+		C0035CA02144FA0F00A24EB0 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
+		C0035CA12144FA0F00A24EB0 /* UserProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileVC.xib; sourceTree = "<group>"; };
+		C0035CA52144FB2200A24EB0 /* CustomHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHelper.swift; sourceTree = "<group>"; };
 		C0599E002144CC5D00C2DFE8 /* HaulioMobileSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaulioMobileSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0599E032144CC5D00C2DFE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0599E082144CC5D00C2DFE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBC26E5339C02A72E90020C8 /* libPods-HaulioMobileSwift.a in Frameworks */,
+				A8C58EDA52D61F9307C46ED2 /* Pods_HaulioMobileSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,9 +98,69 @@
 		688A0DF297095AE6C4CEBAA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2E11BBB4F6862DBF9A82C5EE /* libPods-HaulioMobileSwift.a */,
+				B32417FA58D785EB3618B141 /* Pods_HaulioMobileSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0035C8A2144D04600A24EB0 /* JobsVC */ = {
+			isa = PBXGroup;
+			children = (
+				C0035C8B2144D05600A24EB0 /* JobsVC.swift */,
+				C0035C8C2144D05600A24EB0 /* JobsVC.xib */,
+			);
+			path = JobsVC;
+			sourceTree = "<group>";
+		};
+		C0035C8F2144D32A00A24EB0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C0035CA42144FB0800A24EB0 /* CustomHelper */,
+				C0035C902144D32A00A24EB0 /* NetworkHelper */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C0035C902144D32A00A24EB0 /* NetworkHelper */ = {
+			isa = PBXGroup;
+			children = (
+				C0035C932144D4A800A24EB0 /* NetworkHelper.swift */,
+			);
+			path = NetworkHelper;
+			sourceTree = "<group>";
+		};
+		C0035C952144EEFD00A24EB0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C0035C962144EF0F00A24EB0 /* JobCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C0035C962144EF0F00A24EB0 /* JobCell */ = {
+			isa = PBXGroup;
+			children = (
+				C0035C972144EF2700A24EB0 /* JobCell.swift */,
+				C0035C982144EF2700A24EB0 /* JobCell.xib */,
+			);
+			path = JobCell;
+			sourceTree = "<group>";
+		};
+		C0035C9B2144F9D600A24EB0 /* UserProfileVC */ = {
+			isa = PBXGroup;
+			children = (
+				C0035CA02144FA0F00A24EB0 /* UserProfileVC.swift */,
+				C0035CA12144FA0F00A24EB0 /* UserProfileVC.xib */,
+			);
+			path = UserProfileVC;
+			sourceTree = "<group>";
+		};
+		C0035CA42144FB0800A24EB0 /* CustomHelper */ = {
+			isa = PBXGroup;
+			children = (
+				C0035CA52144FB2200A24EB0 /* CustomHelper.swift */,
+			);
+			path = CustomHelper;
 			sourceTree = "<group>";
 		};
 		C0599DF72144CC5D00C2DFE8 = {
@@ -112,6 +188,7 @@
 		C0599E022144CC5D00C2DFE8 /* HaulioMobileSwift */ = {
 			isa = PBXGroup;
 			children = (
+				C0035C8F2144D32A00A24EB0 /* Helpers */,
 				C0599E312144CCA100C2DFE8 /* Views */,
 				C0599E032144CC5D00C2DFE8 /* AppDelegate.swift */,
 				C0599E072144CC5D00C2DFE8 /* Main.storyboard */,
@@ -143,6 +220,9 @@
 		C0599E312144CCA100C2DFE8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C0035C9B2144F9D600A24EB0 /* UserProfileVC */,
+				C0035C952144EEFD00A24EB0 /* Cells */,
+				C0035C8A2144D04600A24EB0 /* JobsVC */,
 				C0599E322144CCBC00C2DFE8 /* LoginVC */,
 			);
 			path = Views;
@@ -177,6 +257,7 @@
 				C0599DFD2144CC5D00C2DFE8 /* Frameworks */,
 				C0599DFE2144CC5D00C2DFE8 /* Resources */,
 				8395D853E898EB1D4F13C85E /* [CP] Copy Pods Resources */,
+				1F5F45121301F7EE2B0195D7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,9 +352,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0035C9A2144EF2700A24EB0 /* JobCell.xib in Resources */,
 				C0599E0E2144CC5E00C2DFE8 /* LaunchScreen.storyboard in Resources */,
 				C0599E0B2144CC5E00C2DFE8 /* Assets.xcassets in Resources */,
+				C0035C8E2144D05600A24EB0 /* JobsVC.xib in Resources */,
 				C0599E092144CC5D00C2DFE8 /* Main.storyboard in Resources */,
+				C0035CA32144FA0F00A24EB0 /* UserProfileVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +378,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1F5F45121301F7EE2B0195D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HaulioMobileSwift/Pods-HaulioMobileSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HaulioMobileSwift/Pods-HaulioMobileSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3F83DD2FD169A540EA2E9B7C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -319,12 +427,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HaulioMobileSwift/Pods-HaulioMobileSwift-resources.sh",
-				"${PODS_ROOT}/GTMOAuth2/Source/Touch/GTMOAuth2ViewTouch.xib",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GTMOAuth2ViewTouch.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,8 +445,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0035C942144D4A800A24EB0 /* NetworkHelper.swift in Sources */,
+				C0035C992144EF2700A24EB0 /* JobCell.swift in Sources */,
+				C0035C8D2144D05600A24EB0 /* JobsVC.swift in Sources */,
+				C0035CA62144FB2200A24EB0 /* CustomHelper.swift in Sources */,
 				C0599E362144CCEA00C2DFE8 /* LoginVC.swift in Sources */,
 				C0599E042144CC5D00C2DFE8 /* AppDelegate.swift in Sources */,
+				C0035CA22144FA0F00A24EB0 /* UserProfileVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,6 @@
+framework module Pods_HaulioMobileSwift {
+  umbrella header "Pods-HaulioMobileSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
